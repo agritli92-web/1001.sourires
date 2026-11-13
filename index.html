@@ -6,6 +6,7 @@
 <title>1001 Sourires | عيادة أسنان بديدوش مراد، الجزائر العاصمة</title>
 <meta name="description" content="عيادة 1001 Sourires بشارع ديدوش مراد في الجزائر العاصمة: ابتسامة هوليوود، زراعة الأسنان، التركيبات الزركونية وتقويم الأسنان. احجز موعدك عبر واتساب.">
 <link rel="canonical" href="https://1001-sourires.vercel.app/">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png"><link rel="apple-touch-icon" href="images/favicon-192.png">
 <meta name="theme-color" content="#17120D">
 <meta property="og:type" content="website"><meta property="og:title" content="Cabinet dentaire 1001 Sourires, Alger">
 <meta property="og:description" content="Esthétique, implantologie et orthodontie au cœur d'Alger, Rue Didouche Mourad.">
@@ -41,6 +42,8 @@ nav .btn{display:none;min-height:42px;padding:4px 20px}
 .hero:before,.hero:after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,90,.35),transparent 70%);animation:fl 14s ease-in-out infinite alternate}
 .hero:before{top:-80px;inset-inline-start:-60px}.hero:after{bottom:-120px;inset-inline-end:-40px;animation-delay:-6s}
 @keyframes fl{to{transform:translate(40px,30px) scale(1.2)}}
+.hl{position:absolute;top:50%;left:50%;width:min(560px,86%);height:auto;transform:translate(-50%,-50%);opacity:.11;filter:drop-shadow(0 0 36px rgba(201,162,90,.55));pointer-events:none;animation:hz 10s ease-in-out infinite alternate}
+@keyframes hz{to{transform:translate(-50%,-53%) scale(1.07);opacity:.2}}
 .hero .w{position:relative;z-index:1}.hero h1{color:#fff;font-size:clamp(2rem,6vw,3.4rem)}.hero h1 em{color:var(--gold);font-style:normal}
 .hero p{max-width:600px;margin:14px auto 26px;color:#e6dccb;font-size:1.08rem}.hero .bt{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .pill{display:inline-block;margin-top:24px;border:1px solid rgba(201,162,90,.5);padding:4px 18px;border-radius:99px;color:var(--gold);font-size:.9rem}
@@ -102,7 +105,7 @@ footer img{width:110px}footer a{display:block;padding:2px 0}footer a:hover{color
 <button class="bg" id="burger" type="button" aria-label="Menu" aria-expanded="false">&#9776;</button>
 </div></nav>
 
-<header class="hero" id="top"><div class="w">
+<header class="hero" id="top"><img class="hl" src="images/hero-logo.webp" width="480" height="293" alt="" aria-hidden="true" decoding="async"><div class="w">
 <h1 data-t="h1"></h1><p data-t="hp"></p>
 <div class="bt"><a class="btn" href="#book" data-t="cta1"></a><a class="btn o" href="#results" data-t="cta2"></a></div>
 <span class="pill" data-t="hours"></span></div></header>
@@ -117,7 +120,7 @@ footer img{width:110px}footer a{display:block;padding:2px 0}footer a:hover{color
 <section id="team"><div class="w"><h2 data-t="tmT"></h2><p class="sub" data-t="tmS"></p><div class="grid" id="tmG"></div></div></section>
 
 <section id="results" class="alt"><div class="w"><h2 data-t="reT"></h2><p class="sub" data-t="reS"></p><div id="baG"></div>
-<p class="note"><span data-t="reN"></span><br><a href="https://www.instagram.com/1001.sourires__" target="_blank" rel="noopener" data-t="reM"></a></p></div></section>
+<p class="note"><span data-t="reN"></span></p></div></section>
 
 <section id="clinic"><div class="w"><h2 data-t="clT"></h2><p class="sub" data-t="clS"></p><div class="gal" id="galG"></div></div></section>
 <dialog id="lb"><button type="button" aria-label="Close" id="lbx">&#10005;</button><img alt="" id="lbi"></dialog>
@@ -173,7 +176,7 @@ const ICONS=["M8 3c-2 0-4 2-4 5 0 2 1 3 1.500 5 .5 3 .8 8 2.500 8 1.500 0 1.500-
 const L={ar:{
 annT:"✨ مرحباً بكم في عيادة 1001 Sourires بديدوش مراد | مفتوحون طوال أيام الأسبوع بما في ذلك الجمعة من 14:00 إلى 20:00 🦷",annBtn:"احجز",
 n1:"الخدمات",n2:"الطاقم",n3:"النتائج",n4:"العيادة",n5:"الآراء",n6:"الحجز",bookNow:"احجز الآن",
-h1:"ابتسامة تليق بك، في <em>قلب العاصمة</em>",hp:"خبرة في تجميل الأسنان وزراعتها بشارع ديدوش مراد، حيث تلتقي الدقة الطبية بالذوق الراقي والاستقبال الدافئ.",cta1:"احجز موعدك",cta2:"شاهد نتائجنا",hours:"السبت – الخميس 08:00–21:00 | الجمعة 14:00–20:00",
+h1:"ابتسامتك المشرقة تبدأ من هنا في <em>1001 Sourires</em>",hp:"خبرة في تجميل الأسنان وزراعتها بشارع ديدوش مراد، حيث تلتقي الدقة الطبية بالذوق الراقي والاستقبال الدافئ.",cta1:"احجز موعدك",cta2:"شاهد نتائجنا",hours:"السبت – الخميس 08:00–21:00 | الجمعة 14:00–20:00",
 s1t:"تعقيم صارم",s1d:"بروتوكول نظافة وتعقيم دقيق لكل مريض",s2t:"طاقم متخصص ومحترف",s2d:"أطباء يهتمون بكل تفصيل في ابتسامتك",s3t:"مواعيد مرنة",s3d:"طوال الأسبوع حتى المساء، وبما فيها الجمعة",
 svT:"خدماتنا",svS:"عناية متكاملة بأسنانك تحت سقف واحد.",book4:"احجز لهذه الخدمة",
 sv:[["تركيب وتجبير الأسنان","تركيبات من الزركون والسيراميك بمظهر طبيعي ومتانة عالية."],["ابتسامة هوليوود","الفينير وتجميل الأسنان لابتسامة متناسقة ومشرقة."],["جراحة وزراعة الأسنان","حلول حديثة لتعويض الأسنان المفقودة واستعادة الوظيفة والجمال."],["تقويم الأسنان","تقويم عادي أو شفاف لترتيب الأسنان بخطة تناسب حالتك."]],
@@ -192,7 +195,7 @@ wm:"السلام عليكم، أرغب في حجز موعد في عيادة 1001
 fr:{
 annT:"✨ Bienvenue au cabinet 1001 Sourires, Didouche Mourad | Ouvert toute la semaine, y compris le vendredi de 14h à 20h 🦷",annBtn:"Réserver",
 n1:"Soins",n2:"Équipe",n3:"Résultats",n4:"Cabinet",n5:"Avis",n6:"Rendez-vous",bookNow:"Réserver",
-h1:"Un sourire à votre image, au <em>cœur d'Alger</em>",hp:"Expertise en esthétique dentaire et implantologie, Rue Didouche Mourad : précision médicale, raffinement et accueil chaleureux.",cta1:"Prendre rendez-vous",cta2:"Voir nos résultats",hours:"Sam – Jeu 08h–21h | Vendredi 14h–20h",
+h1:"Votre sourire éclatant commence ici, chez <em>1001 Sourires</em>",hp:"Expertise en esthétique dentaire et implantologie, Rue Didouche Mourad : précision médicale, raffinement et accueil chaleureux.",cta1:"Prendre rendez-vous",cta2:"Voir nos résultats",hours:"Sam – Jeu 08h–21h | Vendredi 14h–20h",
 s1t:"Stérilisation rigoureuse",s1d:"Protocole d'hygiène strict pour chaque patient",s2t:"Équipe spécialisée",s2d:"Des praticiens attentifs à chaque détail",s3t:"Horaires flexibles",s3d:"Toute la semaine, jusqu'au soir, vendredi inclus",
 svT:"Nos soins",svS:"Une prise en charge complète sous le même toit.",book4:"Réserver ce soin",
 sv:[["Prothèses dentaires","Prothèses en zircone et céramique, naturelles et durables."],["Hollywood Smile & Facettes","Facettes et esthétique dentaire pour un sourire harmonieux et lumineux."],["Chirurgie et Implantologie","Des solutions modernes pour remplacer les dents manquantes."],["Orthodontie","Classique ou invisible, avec un plan adapté à votre cas."]],
